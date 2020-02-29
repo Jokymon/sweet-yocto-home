@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="yocto" fetch="git://git.yoctoproject.org" />
+	<remote name="oe" fetch="git://git.openembedded.org" />
+	<remote name="qt5" fetch="git://github.com/meta-qt5" />
+
+	<project name="poky" remote="yocto" path="sources/poky" revision="refs/heads/zeus" />
+	<project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="refs/heads/zeus" />
+	<project name="meta-qt5" remote="qt5" path="sources/meta-qt5" revision="refs/heads/zeus" />
+	<project name="meta-cloud-services" remote="yocto" path="sources/meta-cloud-services" revision="refs/heads/zeus" />
+	<project name="meta-raspberrypi" remote="yocto" path="sources/meta-raspberrypi" revision="refs/heads/zeus" />
+</manifest>
