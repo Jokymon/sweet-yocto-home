@@ -14,4 +14,9 @@ jobs:
       run: |
         git fetch --prune --unshallow
     - name: Yocto build
-      uses: Jokymon/yocto-docker-repo-build-action@96b210d705a2eea9edbb4afb4eb2907e2e4bc7bc
+      uses: Jokymon/yocto-docker-repo-build-action@f38707151998f9b0fb28fb7fb85e22e301cb6462
+    - name: Save the artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: raspberry3-image
+        path: /github/workspace/build/tmp/deploy/images/raspberrypi3/core-image-minimal-raspberrypi3.rpi-sdimg
