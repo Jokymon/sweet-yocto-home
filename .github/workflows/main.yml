@@ -1,0 +1,11 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: Jokymon/yocto-docker-repo-build-action@5478d9e1510a2a8eca347dc706d8538386039f86
