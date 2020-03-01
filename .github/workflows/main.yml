@@ -14,7 +14,7 @@ jobs:
       run: |
         git fetch --prune --unshallow
     - name: Yocto build
-      uses: Jokymon/yocto-docker-repo-build-action@8de17928d80b7a9d736bacac92f6e3f5f218c28f
+      uses: Jokymon/yocto-docker-repo-build-action@713f38ef7c190bfd3b0d658b420b7418c1e5cdf4
     - name: Save the artifact
       uses: actions/upload-artifact@v1
       with:
