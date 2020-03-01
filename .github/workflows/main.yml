@@ -8,4 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: Jokymon/yocto-docker-repo-build-action@5478d9e1510a2a8eca347dc706d8538386039f86
+    - uses: actions/checkout@v2
+      name: Checkout the repository
+    - uses: Jokymon/yocto-docker-repo-build-action@7f316b09db569c99ff3f9a125a2a5ff7f079953b
+      name: Yocto build
