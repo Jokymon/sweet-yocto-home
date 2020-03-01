@@ -10,5 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       name: Checkout the repository
+      run: |
+        git fetch --prune --unshallow
     - uses: Jokymon/yocto-docker-repo-build-action@96b210d705a2eea9edbb4afb4eb2907e2e4bc7bc
       name: Yocto build
