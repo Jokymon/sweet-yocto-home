@@ -10,5 +10,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       name: Checkout the repository
-    - uses: Jokymon/yocto-docker-repo-build-action@7f316b09db569c99ff3f9a125a2a5ff7f079953b
+    - uses: Jokymon/yocto-docker-repo-build-action@96b210d705a2eea9edbb4afb4eb2907e2e4bc7bc
       name: Yocto build
