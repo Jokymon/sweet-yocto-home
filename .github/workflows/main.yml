@@ -8,9 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      name: Checkout the repository
+    - name: Checkout the repository
+      uses: actions/checkout@v2
+    - name: Fetch all history for all tags and branches
       run: |
         git fetch --prune --unshallow
-    - uses: Jokymon/yocto-docker-repo-build-action@96b210d705a2eea9edbb4afb4eb2907e2e4bc7bc
-      name: Yocto build
+    - name: Yocto build
+      uses: Jokymon/yocto-docker-repo-build-action@96b210d705a2eea9edbb4afb4eb2907e2e4bc7bc
