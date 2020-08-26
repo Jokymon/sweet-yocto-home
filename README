@@ -6,4 +6,6 @@ Make sure 'repo' is installed, then call
   repo init -u . -m manifest.xml
   repo sync
 
-  source sources/poky/oe-init-build-env
+  TEMPLATECONF=`pwd`/sources/meta-homesweetpi/conf source sources/poky/oe-init-build-env
+
+  bitbake core-image-minimal
