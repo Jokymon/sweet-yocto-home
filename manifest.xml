@@ -3,10 +3,12 @@
 	<remote name="yocto" fetch="git://git.yoctoproject.org" />
 	<remote name="oe" fetch="git://git.openembedded.org" />
 	<remote name="qt5" fetch="git://github.com/meta-qt5" />
+	<remote name="homesweetpi" fetch="git://github.com/Jokymon" />
 
 	<project name="poky" remote="yocto" path="sources/poky" revision="refs/heads/zeus" />
 	<project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="refs/heads/zeus" />
 	<project name="meta-qt5" remote="qt5" path="sources/meta-qt5" revision="refs/heads/zeus" />
 	<project name="meta-cloud-services" remote="yocto" path="sources/meta-cloud-services" revision="refs/heads/zeus" />
 	<project name="meta-raspberrypi" remote="yocto" path="sources/meta-raspberrypi" revision="refs/heads/zeus" />
+	<project name="meta-homesweetpi" remote="homesweetpi" path="sources/meta-homesweetpi" revision="refs/heads/master" />
 </manifest>
